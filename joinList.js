@@ -11,7 +11,13 @@
 
 // Write our function (we must define it too!) below
 // ...
-
+const joinList = function (array) {
+  let result = '';
+  for (let i of array) {
+    result += i + ', ';
+  }
+  return result.slice(0, -2);
+}
 // Test / Driver Code below...
 const conceptList = ["gists", "types", "operators", "iteration", "problem solving"];
 const concepts = joinList(conceptList);
